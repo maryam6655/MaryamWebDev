@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cc94d5;
+
+        }
+        .container heading {
+            width: 90%;
+            margin: 0 auto;
+        }
+        header, footer {
+            background-color: #dd7fca;
+            color:#f4eded;
+            text-align: center;
+            padding: 1em 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4rem; 
+            padding: 0rem 2rem;
+            box-sizing: border-box;
+        }
+        .backimg {
+            background-image: url("mnk1.jpg");
+            background-size: cover; 
+            background-position:centre ;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 1rem 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            box-sizing: border-box;
+            border-radius: 8px; /* Optional: smooth edges */
+        }
+        .text {
+            background-color:#e7e6e6;
+            height: 100%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 20%;
+            font-size: x-large;
+            font-style: italic;
+            text-decoration: solid;
+            color: rgb(248, 201, 224);
+        }
+        .text:hover {
+            opacity: 60%;
+            background-color:#c8c0c0;
+            transform: scale(1);
+            color: #161616;
+            text-decoration:double;
+            font-size: x-large;
+            font-style: italic;
+            /* text-decoration: solid; */
+            /* color: black; */
+        }
+        
+        .intro {
+            text-align: center;
+            /* padding: 2em 0; */
+            margin: 1rem 0rem;
+            /* border: 5px solid ; */
+            background-color:#f0b4f1;
+            color: hsl(240, 31%, 94%);
+            /* border-radius: 1em; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* line-height: -1em; */
+        }
+        
+
+        .button {
+            /* margin-left: 1rem; */
+            color: aliceblue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 12%;
+            margin-bottom: 1rem;
+            padding: 0.5em 1em;
+            font-size: 1rem;
+        }
+        .btn {
+            height: 1.8rem;
+            color: aliceblue;
+            background-color:#9ec3e9;
+            border-radius: 0.5em;
+            cursor: pointer;
+            
+        }
+        .btn:hover {
+            transform: scale(1.3);
+            color: #ebe4e4;
+            
+            
+        }
+        
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                width: 55%;
+            }
+            .container {
+                width: auto;               
+            }
+            .text {
+                width: auto;
+            }
+        }
+        @media (max-width: 480px) {
+            .portfolio-item {
+                width: 90%;
+            }
+            .container {
+                width: auto;
+            }
+            .text {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>    
+        <div class="container heading">
+            <h1>MY PORTFOLIO</h1>
+        </div>
+    </header>
+
+    <div class="container intro">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Here you will find a collection of my work.</p>
+    </div>  
+
+    <div class="container backimg">
+        <div class="text">
+            <b>
+        <p>Maryam Nadeem Khan</p>
+        <p>Student</p>
+        <p>FCCU</p>
+        <p>Bachelors</p>
+        <p>Computer Science</p>
+            </b>
+        </div>
+    </div>
+
+    <div class="container button">
+        <a href="projects.html"><button type="button" class="btn btn-success">Projects</button></a>
+        <a href="CV.HTML"><button type="button" class="btn btn-success">Resume</button></a>
+        <a href="Contacts.html"><button type="button" class="btn btn-success">Contact Me</button></a>
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>

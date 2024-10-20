@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My RESUME</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dd7fca;
+
+        }
+        .container heading {
+            width: 90%;
+            margin: 0 auto;
+        }
+        header, footer {
+            background-color: #dd7fca;
+            color:#ffffff;
+            text-align: center;
+            padding: 1em 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4rem; 
+            padding: 0rem 2rem;
+            box-sizing: border-box;
+        }
+        
+        
+        
+                
+        .intro {
+            text-align: center;
+            /* padding: 2em 0; */
+            margin: 1rem 0rem;
+            /* border: 5px solid ; */
+            background-color:#f0b4f1;
+            color: hsl(240, 31%, 94%);
+            /* border-radius: 1em; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* line-height: -1em; */
+        }
+        
+
+        .button {
+            /* margin-left: 1rem; */
+            color: aliceblue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 12%;
+            margin-bottom: 1rem;
+            padding: 0.5em 1em;
+            font-size: 1rem;
+        }
+        .btn {
+            height: 1.8rem;
+            color: aliceblue;
+            background-color:#333;
+            border-radius: 0.5em;
+            cursor: pointer;
+            
+        }
+        .btn:hover {
+            transform: scale(1.3);
+            color: #FFC300;
+            
+            
+        }
+        .maindiv{
+            width: 100%; 
+            height: 156vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 2rem;         
+        }
+        .maindiv iframe {
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                width: 55%;
+            }
+            .container {
+                width: auto;
+                margin: 1em 1em;               
+            }
+            .maindiv {
+                height: 50vh;
+            }
+            
+        }
+        @media (max-width: 480px) {
+            .portfolio-item {
+                width: 90%;
+            }
+            .container {
+                width: auto;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>    
+        <div class="container heading">
+            <h1>MY RESUME</h1>
+        </div>
+    </header>
+
+    <div class="container intro">
+        <h2>Welcome to Resume Section</h2>
+        <p>Here you will find my CV/Resume and can Download it.</p>
+    </div>  
+
+    <div class="container maindiv">
+        <iframe class="pdf" src="mnkResume.pdf"></iframe>
+    </div>
+    
+    <div class="container button">
+        <a href="mnkResume.pdf" download=""><button type="button" class="btn btn-success">DOWNLOAD</button></a>
+        <a href="Homepage.html"><button type="button" class="btn btn-success">HOME</button></a>
+    </div>
+    
+        
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>
